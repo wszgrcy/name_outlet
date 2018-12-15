@@ -15,7 +15,7 @@ export class OneComponent implements OnInit {
     })
   }
   quxiao(type) {
-    // this.rout.navigate([{ outlets: { isOne: ['one/child1'] } }])
-    this.rout.navigateByUrl("./(isOne:one//child1)");
+
+    this.rout.navigate([type], { relativeTo: this.route })
   }
 }
